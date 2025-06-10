@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9EBB24BB-1EDD-430C-86F2-2EB47F73EEAC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>pryFinalLP2</RootNamespace>
+    <AssemblyName>pryFinalLP2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsActividad.cs" />
+    <Compile Include="clsBarrio.cs" />
+    <Compile Include="clsSocio.cs" />
+    <Compile Include="frmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcercaDe.Designer.cs">
+      <DependentUpon>frmAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarSocio.Designer.cs">
+      <DependentUpon>frmBuscarSocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarSocio.Designer.cs">
+      <DependentUpon>frmConsultarSocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoSocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoSocios.Designer.cs">
+      <DependentUpon>frmListadoSocios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoSociosDeudores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoSociosDeudores.Designer.cs">
+      <DependentUpon>frmListadoSociosDeudores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoSociosXActividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoSociosXActividad.Designer.cs">
+      <DependentUpon>frmListadoSociosXActividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoSociosXBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoSociosXBarrio.Designer.cs">
+      <DependentUpon>frmListadoSociosXBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevoSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevoSocio.Designer.cs">
+      <DependentUpon>frmNuevoSocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPantallaPpal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPantallaPpal.Designer.cs">
+      <DependentUpon>frmPantallaPpal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAcercaDe.resx">
+      <DependentUpon>frmAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarSocio.resx">
+      <DependentUpon>frmBuscarSocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarSocio.resx">
+      <DependentUpon>frmConsultarSocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoSocios.resx">
+      <DependentUpon>frmListadoSocios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoSociosDeudores.resx">
+      <DependentUpon>frmListadoSociosDeudores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoSociosXActividad.resx">
+      <DependentUpon>frmListadoSociosXActividad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoSociosXBarrio.resx">
+      <DependentUpon>frmListadoSociosXBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoSocio.resx">
+      <DependentUpon>frmNuevoSocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPantallaPpal.resx">
+      <DependentUpon>frmPantallaPpal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sgs-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
